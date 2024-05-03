@@ -1,35 +1,29 @@
+
 <?php
 require('index.php');
+
+?>
+<?php 
 
 $servername = "localhost";
 $username = "dckap";
 $password = "Dckap2023Ecommerce";
-$dbname = "php_ass";
+$db_name = "php_ass";
 
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
+$conn = new mysqli($servername, $username, $password, $db_name);
 
-// Check connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
-
-$sql = "SELECT id, title, author, img,des FROM product";
-$result = $conn->query($sql);
- if(isset($_GET["search"])) {
-
-
-$search=$_GET["search"];
-$sql="select * from product where  title LIKE '%$search%'";
+$id=$_GET['id'];
+ $sql="select * from  product where id='$id'";
+ 
 $result=$conn->query($sql);
-}
 
 
 
-
+ 
 
 
 ?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -88,3 +82,6 @@ $result=$conn->query($sql);
 <?php
 require('footer.php');
 ?>
+
+
+

@@ -54,7 +54,9 @@
   
         </div>
       </div>
-      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium"><input class=" hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+      <a href="#" class="text-gray-300 hover:bg-gray-700 hover:text-white rounded-md px-3 py-2 text-sm font-medium">
+        <form method="get" ><input  name ="search" class=" hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"></form>
+        
 </a>
       <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
         <button type="button" class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">

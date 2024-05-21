@@ -22,6 +22,8 @@ $result = $conn->query($sql);
 $search=$_GET["search"];
 $sql="select * from product where  title LIKE '%$search%'";
 $result=$conn->query($sql);
+
+
 }
 
 
